@@ -1,0 +1,1479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9833FBF-9183-4D5E-8D5B-A4CBCD65D811}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IEDExplorer</RootNamespace>
+    <AssemblyName>IEDExplorer</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>x86</PlatformTarget>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Iedexplorer.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="iec61850dotnet">
+      <HintPath>Embed\iec61850dotnet.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PcapDotNet.Base, Version=1.0.3.21015, Culture=neutral, PublicKeyToken=4b6f3e583145a652, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Embed\PcapDotNet.Base.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PcapDotNet.Core, Version=1.0.3.21026, Culture=neutral, PublicKeyToken=4b6f3e583145a652, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Embed\PcapDotNet.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PcapDotNet.Core.Extensions, Version=1.0.3.21028, Culture=neutral, PublicKeyToken=4b6f3e583145a652, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Embed\PcapDotNet.Core.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PcapDotNet.Packets, Version=1.0.3.21016, Culture=neutral, PublicKeyToken=4b6f3e583145a652, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Embed\PcapDotNet.Packets.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionRequested.cs" />
+    <Compile Include="BNExtension\XMLEncoder.cs" />
+    <Compile Include="Dialogs\ControllableSignalsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ControllableSignalsDialog.designer.cs">
+      <DependentUpon>ControllableSignalsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\FindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FindForm.Designer.cs">
+      <DependentUpon>FindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Place.cs" />
+    <Compile Include="Dialogs\Wildcard.cs" />
+    <Compile Include="ExportListViewToCSV.cs" />
+    <Compile Include="Goose\ExportGooseToXml.cs" />
+    <Compile Include="Goose\ExportGvlToXml.cs" />
+    <Compile Include="Goose\GooseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Goose\GooseControl.Designer.cs">
+      <DependentUpon>GooseControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goose\GooseData.cs" />
+    <Compile Include="Goose\GooseDataeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Goose\GooseDataeEdit.Designer.cs">
+      <DependentUpon>GooseDataeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goose\GooseExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Goose\GooseExplorer.Designer.cs">
+      <DependentUpon>GooseExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goose\GooseSender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Goose\GooseSender.Designer.cs">
+      <DependentUpon>GooseSender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goose\GooseTreeViewMgmt.cs" />
+    <Compile Include="Goose\ImportDataListFromXml.cs" />
+    <Compile Include="Goose\ImportGooseFromXml.cs" />
+    <Compile Include="Goose\SeqData.cs" />
+    <Compile Include="Goose_ASN1_Model\Data.cs" />
+    <Compile Include="Goose_ASN1_Model\DataSequence.cs" />
+    <Compile Include="Goose_ASN1_Model\FloatingPoint.cs" />
+    <Compile Include="Goose_ASN1_Model\GOOSE.cs" />
+    <Compile Include="Goose_ASN1_Model\GoosePdu.cs" />
+    <Compile Include="Goose_ASN1_Model\IEC61850.cs" />
+    <Compile Include="Goose_ASN1_Model\MMSString.cs" />
+    <Compile Include="Goose_ASN1_Model\TimeOfDay.cs" />
+    <Compile Include="Goose_ASN1_Model\UtcTime.cs" />
+    <Compile Include="MyTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NodeGData.cs" />
+    <Compile Include="NodeGVL.cs" />
+    <Compile Include="SCLParserDOM2.cs" />
+    <Compile Include="NodeVLM.cs" />
+    <Compile Include="Dialogs\AutoUpdateStoppedDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AutoUpdateStoppedDialog.Designer.cs">
+      <DependentUpon>AutoUpdateStoppedDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmbeddedAssembly.cs" />
+    <Compile Include="IEC61850.Server\DataAttribute.cs" />
+    <Compile Include="IEC61850.Server\DataObject.cs" />
+    <Compile Include="IEC61850.Server\DataSet.cs" />
+    <Compile Include="IEC61850.Server\DataSetEntry.cs" />
+    <Compile Include="IEC61850.Server\IedModel.cs" />
+    <Compile Include="IEC61850.Server\IedServer.cs" />
+    <Compile Include="IEC61850.Server\LogicalDevice.cs" />
+    <Compile Include="IEC61850.Server\LogicalNode.cs" />
+    <Compile Include="IEC61850.Server\ModelNode.cs" />
+    <Compile Include="IEC61850.Server\ReportControlBlock.cs" />
+    <Compile Include="IEC61850.Server\SettingGroupControlBlock.cs" />
+    <Compile Include="IEC61850.Server\Util.cs" />
+    <Compile Include="Dialogs\SplitStringDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SplitStringDialog.Designer.cs">
+      <DependentUpon>SplitStringDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RcbActivateParams.cs" />
+    <Compile Include="Dialogs\AboutDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AboutDialog.Designer.cs">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SCLServer.cs" />
+    <Compile Include="SCL_Parser\SCLParse.cs" />
+    <Compile Include="StringToDataConverter.cs" />
+    <Compile Include="TreeViewAdv\Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddNVLView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AddNVLView.Designer.cs">
+      <DependentUpon>AddNVLView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommAddress.cs" />
+    <Compile Include="Dialogs\CommandDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CommandDialog.Designer.cs">
+      <DependentUpon>CommandDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandParams.cs" />
+    <Compile Include="Dialogs\ConnParamDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ConnParamDialog.Designer.cs">
+      <DependentUpon>ConnParamDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\RcbActivateDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\RcbActivateDialog.Designer.cs">
+      <DependentUpon>RcbActivateDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docking\AutoHideStripBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockAreasEditor.cs" />
+    <Compile Include="Docking\DockContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docking\DockContentCollection.cs" />
+    <Compile Include="Docking\DockContentEventArgs.cs" />
+    <Compile Include="Docking\DockContentHandler.cs" />
+    <Compile Include="Docking\DockOutlineBase.cs" />
+    <Compile Include="Docking\DockPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPane.SplitterControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPaneCaptionBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPaneCollection.cs" />
+    <Compile Include="Docking\DockPanel.Appearance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPanel.AutoHideWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPanel.cs" />
+    <Compile Include="Docking\DockPanel.DockDragHandler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPanel.DragHandler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPanel.FocusManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPanel.MdiClientController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPanel.Persistor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPanel.SplitterDragHandler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPanelExtender.cs" />
+    <Compile Include="Docking\DockPanelSkin.cs" />
+    <Compile Include="Docking\DockPaneStripBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockWindow.SplitterControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockWindowCollection.cs" />
+    <Compile Include="Docking\DragForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docking\DummyControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Enums.cs" />
+    <Compile Include="Docking\FloatWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docking\FloatWindowCollection.cs" />
+    <Compile Include="Docking\Helpers\DockHelper.cs" />
+    <Compile Include="Docking\Helpers\DrawHelper.cs" />
+    <Compile Include="Docking\Helpers\ResourceHelper.cs" />
+    <Compile Include="Docking\Helpers\Win32Helper.cs" />
+    <Compile Include="Docking\InertButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\InertButtonBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Interfaces.cs" />
+    <Compile Include="Docking\ITheme.cs" />
+    <Compile Include="Docking\Localization.cs" />
+    <Compile Include="Docking\Measures.cs" />
+    <Compile Include="Docking\NestedDockingStatus.cs" />
+    <Compile Include="Docking\NestedPaneCollection.cs" />
+    <Compile Include="Docking\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Docking\ResourcesVS2003.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourcesVS2003.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Docking\Skins\Style.cs" />
+    <Compile Include="Docking\SplitterBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Docking\StringsVS2003.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StringsVS2003.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Docking\ThemeBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\VisibleNestedPaneCollection.cs" />
+    <Compile Include="Docking\VS2003AutoHideStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\VS2003DockPaneCaption.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\VS2003DockPaneStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\VS2003Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\VS2005AutoHideStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\VS2005DockPaneCaption.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\VS2005DockPaneStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\VS2005Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\VS2012LightAutoHideStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\VS2012LightAutoHideWindowControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\VS2012LightDockPaneCaption.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\VS2012LightDockPaneStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\VS2012LightDockWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\VS2012LightSplitterControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\VS2012LightTheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Win32\Enums.cs" />
+    <Compile Include="Docking\Win32\NativeMethods.cs" />
+    <Compile Include="HexBox\BuiltInContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HexBox\ByteCharConverters.cs" />
+    <Compile Include="HexBox\ByteCollection.cs" />
+    <Compile Include="HexBox\BytePositionInfo.cs" />
+    <Compile Include="HexBox\DataBlock.cs" />
+    <Compile Include="HexBox\DataMap.cs" />
+    <Compile Include="HexBox\DynamicByteProvider.cs" />
+    <Compile Include="HexBox\DynamicFileByteProvider.cs" />
+    <Compile Include="HexBox\FileByteProvider.cs" />
+    <Compile Include="HexBox\FileDataBlock.cs" />
+    <Compile Include="HexBox\FindOptions.cs" />
+    <Compile Include="HexBox\HexBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HexBox\HexCasing.cs" />
+    <Compile Include="HexBox\IByteProvider.cs" />
+    <Compile Include="HexBox\MemoryDataBlock.cs" />
+    <Compile Include="HexBox\NativeMethods.cs" />
+    <Compile Include="HexBox\Util.cs" />
+    <Compile Include="Iec61850Controller.cs" />
+    <Compile Include="Iec61850Model.cs" />
+    <Compile Include="IsoLayers.cs" />
+    <Compile Include="MMSCapture.cs" />
+    <Compile Include="MMSCaptureDb.cs" />
+    <Compile Include="NodeDO.cs" />
+    <Compile Include="NodeRCB.cs" />
+    <Compile Include="FileTransferState.cs" />
+    <Compile Include="IniFileManager.cs" />
+    <Compile Include="NodeFile.cs" />
+    <Compile Include="Dialogs\EditValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\EditValue.Designer.cs">
+      <DependentUpon>EditValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IsoAcse.cs" />
+    <Compile Include="IsoConnectionParameters.cs" />
+    <Compile Include="IsoCotp.cs" />
+    <Compile Include="IsoPres.cs" />
+    <Compile Include="IsoSess.cs" />
+    <Compile Include="IsoUtil.cs" />
+    <Compile Include="TreeViewAdv\BitmapHelper.cs" />
+    <Compile Include="TreeViewAdv\GifDecoder.cs" />
+    <Compile Include="TreeViewAdv\NumericTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\PerformanceAnalyzer.cs" />
+    <Compile Include="TreeViewAdv\ResourceHelper.cs" />
+    <Compile Include="TreeViewAdv\StringCollectionEditor.cs" />
+    <Compile Include="TreeViewAdv\TextHelper.cs" />
+    <Compile Include="TreeViewAdv\Threading\AbortableThreadPool.cs" />
+    <Compile Include="TreeViewAdv\Threading\WorkItem.cs" />
+    <Compile Include="TreeViewAdv\Threading\WorkItemStatus.cs" />
+    <Compile Include="TreeViewAdv\TimeCounter.cs" />
+    <Compile Include="TreeViewAdv\Tree\AutoHeaderHeightLayout.cs" />
+    <Compile Include="TreeViewAdv\Tree\AutoRowHeightLayout.cs" />
+    <Compile Include="TreeViewAdv\Tree\ColumnCollection.cs" />
+    <Compile Include="TreeViewAdv\Tree\DrawContext.cs" />
+    <Compile Include="TreeViewAdv\Tree\DropNodeValidatingEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\DropPosition.cs" />
+    <Compile Include="TreeViewAdv\Tree\EditorContext.cs" />
+    <Compile Include="TreeViewAdv\Tree\Enums.cs" />
+    <Compile Include="TreeViewAdv\Tree\FixedHeaderHeightLayout.cs" />
+    <Compile Include="TreeViewAdv\Tree\FixedRowHeightLayout.cs" />
+    <Compile Include="TreeViewAdv\Tree\IHeaderLayout.cs" />
+    <Compile Include="TreeViewAdv\Tree\IncrementalSearch.cs" />
+    <Compile Include="TreeViewAdv\Tree\Input\ClickColumnState.cs" />
+    <Compile Include="TreeViewAdv\Tree\Input\ColumnState.cs" />
+    <Compile Include="TreeViewAdv\Tree\Input\InputState.cs" />
+    <Compile Include="TreeViewAdv\Tree\Input\InputWithControl.cs" />
+    <Compile Include="TreeViewAdv\Tree\Input\InputWithShift.cs" />
+    <Compile Include="TreeViewAdv\Tree\Input\NormalInputState.cs" />
+    <Compile Include="TreeViewAdv\Tree\Input\ReorderColumnState.cs" />
+    <Compile Include="TreeViewAdv\Tree\Input\ResizeColumnState.cs" />
+    <Compile Include="TreeViewAdv\Tree\IRowLayout.cs" />
+    <Compile Include="TreeViewAdv\Tree\IToolTipProvider.cs" />
+    <Compile Include="TreeViewAdv\Tree\ITreeModel.cs" />
+    <Compile Include="TreeViewAdv\Tree\ListModel.cs" />
+    <Compile Include="TreeViewAdv\Tree\NativeMethods.cs" />
+    <Compile Include="TreeViewAdv\Tree\Node.cs" />
+    <Compile Include="TreeViewAdv\Tree\NodeControlInfo.cs" />
+    <Compile Include="TreeViewAdv\Tree\NodeControls\BaseTextControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\BindableControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\DrawEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\NodeControls\EditableControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\EditEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\NodeControls\ExpandingIcon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\InteractiveControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\LabelEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeControlsCollection.cs" />
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeControlValueEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeDecimalTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeIcon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeIntegerTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeNumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodePlusMinus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeStateIcon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\SortedTreeModel.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\TreeColumnCollection.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeColumnEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeListAdapter.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeModel.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeModelBase.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeModelEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeNodeAdv.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeNodeAdvMouseEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreePath.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreePathEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeViewAdv.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\TreeViewAdv.Designer.cs">
+      <DependentUpon>TreeViewAdv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\TreeViewAdv.Draw.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\TreeViewAdv.Editor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\TreeViewAdv.Input.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\TreeViewAdv.Properties.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\TreeViewAdvCancelEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeViewAdvEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeViewRowDrawEventArgs.cs" />
+    <Compile Include="Views\CaptureView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CaptureView.Designer.cs">
+      <DependentUpon>CaptureView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PollView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PollView.Designer.cs">
+      <DependentUpon>PollView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ReportsView.Designer.cs">
+      <DependentUpon>ReportsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WatchDataView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\WatchDataView.Designer.cs">
+      <DependentUpon>WatchDataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IedDataView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\IedDataView.Designer.cs">
+      <DependentUpon>IedDataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IedTreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\IedTreeView.Designer.cs">
+      <DependentUpon>IedTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LogView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LogView.Designer.cs">
+      <DependentUpon>LogView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MyListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NodeVL.cs" />
+    <Compile Include="NodeFC.cs" />
+    <Compile Include="NodeData.cs" />
+    <Compile Include="NodeLN.cs" />
+    <Compile Include="NodeLD.cs" />
+    <Compile Include="Env.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="NodeIed.cs" />
+    <Compile Include="org\bn\attributes\ASN1Any.cs" />
+    <Compile Include="org\bn\attributes\ASN1BitString.cs" />
+    <Compile Include="org\bn\attributes\ASN1Boolean.cs" />
+    <Compile Include="org\bn\attributes\ASN1BoxedType.cs" />
+    <Compile Include="org\bn\attributes\ASN1Choice.cs" />
+    <Compile Include="org\bn\attributes\ASN1Element.cs" />
+    <Compile Include="org\bn\attributes\ASN1Enum.cs" />
+    <Compile Include="org\bn\attributes\ASN1EnumItem.cs" />
+    <Compile Include="org\bn\attributes\ASN1Integer.cs" />
+    <Compile Include="org\bn\attributes\ASN1Module.cs" />
+    <Compile Include="org\bn\attributes\ASN1Null.cs" />
+    <Compile Include="org\bn\attributes\ASN1ObjectIdentifier.cs" />
+    <Compile Include="org\bn\attributes\ASN1OctetString.cs" />
+    <Compile Include="org\bn\attributes\ASN1PreparedElement.cs" />
+    <Compile Include="org\bn\attributes\ASN1Real.cs" />
+    <Compile Include="org\bn\attributes\ASN1Sequence.cs" />
+    <Compile Include="org\bn\attributes\ASN1SequenceOf.cs" />
+    <Compile Include="org\bn\attributes\ASN1String.cs" />
+    <Compile Include="org\bn\attributes\constraints\ASN1PatternConstraint.cs" />
+    <Compile Include="org\bn\attributes\constraints\ASN1SignedNumberConstraint.cs" />
+    <Compile Include="org\bn\attributes\constraints\ASN1SizeConstraint.cs" />
+    <Compile Include="org\bn\attributes\constraints\ASN1ValueRangeConstraint.cs" />
+    <Compile Include="org\bn\attributes\ASN1_MMSDataArray.cs" />
+    <Compile Include="org\bn\attributes\ASN1_MMSDataStructure.cs" />
+    <Compile Include="org\bn\CoderFactory.cs" />
+    <Compile Include="org\bn\coders\ASN1PreparedElementData.cs" />
+    <Compile Include="org\bn\coders\ber\BERCoderUtils.cs" />
+    <Compile Include="org\bn\coders\ber\BERDecoder.cs" />
+    <Compile Include="org\bn\coders\ber\BEREncoder.cs" />
+    <Compile Include="org\bn\coders\ber\BERObjectIdentifier.cs" />
+    <Compile Include="org\bn\coders\CoderUtils.cs" />
+    <Compile Include="org\bn\coders\DecodedObject.cs" />
+    <Compile Include="org\bn\coders\Decoder.cs" />
+    <Compile Include="org\bn\coders\der\DERDecoder.cs" />
+    <Compile Include="org\bn\coders\der\DEREncoder.cs" />
+    <Compile Include="org\bn\coders\ElementInfo.cs" />
+    <Compile Include="org\bn\coders\ElementType.cs" />
+    <Compile Include="org\bn\coders\Encoder.cs" />
+    <Compile Include="org\bn\coders\IASN1PreparedElement.cs" />
+    <Compile Include="org\bn\coders\IASN1PreparedElementData.cs" />
+    <Compile Include="org\bn\coders\IASN1TypesDecoder.cs" />
+    <Compile Include="org\bn\coders\IASN1TypesEncoder.cs" />
+    <Compile Include="org\bn\coders\per\PERAlignedDecoder.cs" />
+    <Compile Include="org\bn\coders\per\PERAlignedEncoder.cs" />
+    <Compile Include="org\bn\coders\per\PERCoderUtils.cs" />
+    <Compile Include="org\bn\coders\per\PERUnalignedDecoder.cs" />
+    <Compile Include="org\bn\coders\per\PERUnalignedEncoder.cs" />
+    <Compile Include="org\bn\coders\TagClass.cs" />
+    <Compile Include="org\bn\coders\UniversalTags.cs" />
+    <Compile Include="org\bn\IDecoder.cs" />
+    <Compile Include="org\bn\IEncoder.cs" />
+    <Compile Include="org\bn\metadata\ASN1AnyMetadata.cs" />
+    <Compile Include="org\bn\metadata\ASN1BitStringMetadata.cs" />
+    <Compile Include="org\bn\metadata\ASN1BooleanMetadata.cs" />
+    <Compile Include="org\bn\metadata\ASN1BoxedTypeMetadata.cs" />
+    <Compile Include="org\bn\metadata\ASN1ChoiceMetadata.cs" />
+    <Compile Include="org\bn\metadata\ASN1ElementMetadata.cs" />
+    <Compile Include="org\bn\metadata\ASN1EnumItemMetadata.cs" />
+    <Compile Include="org\bn\metadata\ASN1EnumMetadata.cs" />
+    <Compile Include="org\bn\metadata\ASN1FieldMetadata.cs" />
+    <Compile Include="org\bn\metadata\ASN1IntegerMetadata.cs" />
+    <Compile Include="org\bn\metadata\ASN1Metadata.cs" />
+    <Compile Include="org\bn\metadata\ASN1NullMetadata.cs" />
+    <Compile Include="org\bn\metadata\ASN1ObjectIdentifierMetadata.cs" />
+    <Compile Include="org\bn\metadata\ASN1OctetStringMetadata.cs" />
+    <Compile Include="org\bn\metadata\ASN1RealMetadata.cs" />
+    <Compile Include="org\bn\metadata\ASN1SequenceMetadata.cs" />
+    <Compile Include="org\bn\metadata\ASN1SequenceOfMetadata.cs" />
+    <Compile Include="org\bn\metadata\ASN1StringMetadata.cs" />
+    <Compile Include="org\bn\metadata\ASN1TypeMetadata.cs" />
+    <Compile Include="org\bn\metadata\constraints\ASN1SizeConstraintMetadata.cs" />
+    <Compile Include="org\bn\metadata\constraints\ASN1ValueRangeConstraintMetadata.cs" />
+    <Compile Include="org\bn\metadata\constraints\IASN1ConstraintMetadata.cs" />
+    <Compile Include="org\bn\metadata\IASN1Metadata.cs" />
+    <Compile Include="org\bn\types\BitString.cs" />
+    <Compile Include="org\bn\types\NullObject.cs" />
+    <Compile Include="org\bn\types\ObjectIdentifier.cs" />
+    <Compile Include="org\bn\utils\BitArrayInputStream.cs" />
+    <Compile Include="org\bn\utils\BitArrayOutputStream.cs" />
+    <Compile Include="org\bn\utils\ReverseByteArrayOutputStream.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Scsm_MMS.cs" />
+    <Compile Include="NodeBase.cs" />
+    <Compile Include="NodeTypeEnum.cs" />
+    <Compile Include="IsoProtocolState.cs" />
+    <Compile Include="scsm_MMS_TypeEnum.cs" />
+    <Compile Include="TcpProtocolState.cs" />
+    <Compile Include="TcpState.cs" />
+    <Compile Include="IsoTpktState.cs" />
+    <Compile Include="Iec61850StateEnum.cs" />
+    <Compile Include="TcpRw.cs" />
+    <Compile Include="Iec61850State.cs" />
+    <Compile Include="MMS_ASN1_Model\AccessCondition.cs" />
+    <Compile Include="MMS_ASN1_Model\AccessResult.cs" />
+    <Compile Include="MMS_ASN1_Model\Access_Control_List_instance.cs" />
+    <Compile Include="MMS_ASN1_Model\AcknowledgeEventNotification_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\AcknowledgeEventNotification_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\AddEventConditionListReference_Error.cs" />
+    <Compile Include="MMS_ASN1_Model\AddEventConditionListReference_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\AddEventConditionListReference_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\AdditionalCBBOptions.cs" />
+    <Compile Include="MMS_ASN1_Model\AdditionalService_Error.cs" />
+    <Compile Include="MMS_ASN1_Model\AdditionalService_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\AdditionalService_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\AdditionalSupportOptions.cs" />
+    <Compile Include="MMS_ASN1_Model\Address.cs" />
+    <Compile Include="MMS_ASN1_Model\AddToUnitControl_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\AddToUnitControl_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\AE_invocation_identifier.cs" />
+    <Compile Include="MMS_ASN1_Model\AE_qualifier.cs" />
+    <Compile Include="MMS_ASN1_Model\AlarmAckRule.cs" />
+    <Compile Include="MMS_ASN1_Model\AlarmEnrollmentSummary.cs" />
+    <Compile Include="MMS_ASN1_Model\AlarmSummary.cs" />
+    <Compile Include="MMS_ASN1_Model\AlterEventConditionListMonitoring_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\AlterEventConditionListMonitoring_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\AlterEventConditionMonitoring_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\AlterEventConditionMonitoring_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\AlterEventEnrollment_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\AlterEventEnrollment_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\AlternateAccess.cs" />
+    <Compile Include="MMS_ASN1_Model\AlternateAccessSelection.cs" />
+    <Compile Include="MMS_ASN1_Model\AlterProgramInvocationAttributes_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\AlterProgramInvocationAttributes_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\ApplicationReference.cs" />
+    <Compile Include="MMS_ASN1_Model\AP_invocation_identifier.cs" />
+    <Compile Include="MMS_ASN1_Model\AP_title.cs" />
+    <Compile Include="MMS_ASN1_Model\AttachToEventCondition.cs" />
+    <Compile Include="MMS_ASN1_Model\AttachToSemaphore.cs" />
+    <Compile Include="MMS_ASN1_Model\Authentication_value.cs" />
+    <Compile Include="MMS_ASN1_Model\Cancel_ErrorPDU.cs" />
+    <Compile Include="MMS_ASN1_Model\Cancel_RequestPDU.cs" />
+    <Compile Include="MMS_ASN1_Model\Cancel_ResponsePDU.cs" />
+    <Compile Include="MMS_ASN1_Model\ChangeAccessControl_Error.cs" />
+    <Compile Include="MMS_ASN1_Model\ChangeAccessControl_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\ChangeAccessControl_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\Conclude_ErrorPDU.cs" />
+    <Compile Include="MMS_ASN1_Model\Conclude_RequestPDU.cs" />
+    <Compile Include="MMS_ASN1_Model\Conclude_ResponsePDU.cs" />
+    <Compile Include="MMS_ASN1_Model\ConfirmedServiceRequest.cs" />
+    <Compile Include="MMS_ASN1_Model\ConfirmedServiceResponse.cs" />
+    <Compile Include="MMS_ASN1_Model\Confirmed_ErrorPDU.cs" />
+    <Compile Include="MMS_ASN1_Model\Confirmed_RequestPDU.cs" />
+    <Compile Include="MMS_ASN1_Model\Confirmed_ResponsePDU.cs" />
+    <Compile Include="MMS_ASN1_Model\ControlElement.cs" />
+    <Compile Include="MMS_ASN1_Model\Control_State.cs" />
+    <Compile Include="MMS_ASN1_Model\CreateJournal_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\CreateJournal_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\CreateProgramInvocation_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\CreateProgramInvocation_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\CreateUnitControl_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\CreateUnitControl_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\CS_AlterEventConditionMonitoring_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\CS_AlterEventEnrollment_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\CS_CreateProgramInvocation_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\CS_DefineEventCondition_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\CS_DefineEventEnrollment_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\CS_EventNotification.cs" />
+    <Compile Include="MMS_ASN1_Model\CS_GetEventConditionAttributes_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\CS_GetProgramInvocationAttributes_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\CS_Resume_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\CS_Start_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\CS_Status_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\Data.cs" />
+    <Compile Include="MMS_ASN1_Model\DataAccessError.cs" />
+    <Compile Include="MMS_ASN1_Model\DataParameters.cs" />
+    <Compile Include="MMS_ASN1_Model\Data_Exchange_instance.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineAccessControlList_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineAccessControlList_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineEventAction_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineEventAction_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineEventConditionList_Error.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineEventConditionList_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineEventConditionList_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineEventCondition_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineEventCondition_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineEventEnrollment_Error.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineEventEnrollment_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineEventEnrollment_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineNamedType_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineNamedType_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineNamedVariableList_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineNamedVariableList_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineNamedVariable_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineNamedVariable_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineScatteredAccess_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineScatteredAccess_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineSemaphore_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DefineSemaphore_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteAccessControlList_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteAccessControlList_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteDomain_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteDomain_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteEventAction_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteEventAction_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteEventConditionList_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteEventConditionList_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteEventCondition_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteEventCondition_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteEventEnrollment_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteEventEnrollment_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteJournal_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteJournal_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteNamedType_Error.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteNamedType_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteNamedType_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteNamedVariableList_Error.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteNamedVariableList_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteNamedVariableList_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteProgramInvocation_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteProgramInvocation_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteSemaphore_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteSemaphore_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteUnitControl_Error.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteUnitControl_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteUnitControl_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteVariableAccess_Error.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteVariableAccess_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DeleteVariableAccess_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\DirectoryEntry.cs" />
+    <Compile Include="MMS_ASN1_Model\DomainManagementParameters.cs" />
+    <Compile Include="MMS_ASN1_Model\DomainState.cs" />
+    <Compile Include="MMS_ASN1_Model\Domain_instance.cs" />
+    <Compile Include="MMS_ASN1_Model\DownloadSegment_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\DownloadSegment_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\EC_Class.cs" />
+    <Compile Include="MMS_ASN1_Model\EC_State.cs" />
+    <Compile Include="MMS_ASN1_Model\EEAttributes.cs" />
+    <Compile Include="MMS_ASN1_Model\EE_Class.cs" />
+    <Compile Include="MMS_ASN1_Model\EE_Duration.cs" />
+    <Compile Include="MMS_ASN1_Model\EE_State.cs" />
+    <Compile Include="MMS_ASN1_Model\EntryContent.cs" />
+    <Compile Include="MMS_ASN1_Model\EN_Additional_Detail.cs" />
+    <Compile Include="MMS_ASN1_Model\ErrorParameters.cs" />
+    <Compile Include="MMS_ASN1_Model\EventConditionStatus.cs" />
+    <Compile Include="MMS_ASN1_Model\EventNotification.cs" />
+    <Compile Include="MMS_ASN1_Model\EventTime.cs" />
+    <Compile Include="MMS_ASN1_Model\Event_Action_instance.cs" />
+    <Compile Include="MMS_ASN1_Model\Event_Condition_instance.cs" />
+    <Compile Include="MMS_ASN1_Model\Event_Condition_List_instance.cs" />
+    <Compile Include="MMS_ASN1_Model\Event_Enrollment_instance.cs" />
+    <Compile Include="MMS_ASN1_Model\ExchangeData_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\ExchangeData_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\ExtendedStatus.cs" />
+    <Compile Include="MMS_ASN1_Model\FileAttributes.cs" />
+    <Compile Include="MMS_ASN1_Model\FileClose_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\FileClose_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\FileDelete_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\FileDelete_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\FileDirectory_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\FileDirectory_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\FileManagementParameters.cs" />
+    <Compile Include="MMS_ASN1_Model\FileName.cs" />
+    <Compile Include="MMS_ASN1_Model\FileOpen_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\FileOpen_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\FileRead_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\FileRead_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\FileRename_Error.cs" />
+    <Compile Include="MMS_ASN1_Model\FileRename_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\FileRename_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\FloatingPoint.cs" />
+    <Compile Include="MMS_ASN1_Model\GeneralManagementParameters.cs" />
+    <Compile Include="MMS_ASN1_Model\GetAccessControlListAttributes_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\GetAccessControlListAttributes_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\GetAlarmEnrollmentSummary_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\GetAlarmEnrollmentSummary_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\GetAlarmSummary_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\GetAlarmSummary_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\GetCapabilityList_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\GetCapabilityList_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\GetDataExchangeAttributes_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\GetDataExchangeAttributes_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\GetDomainAttributes_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\GetDomainAttributes_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\GetEventActionAttributes_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\GetEventActionAttributes_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\GetEventConditionAttributes_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\GetEventConditionAttributes_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\GetEventConditionListAttributes_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\GetEventConditionListAttributes_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\GetEventEnrollmentAttributes_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\GetEventEnrollmentAttributes_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\GetNamedTypeAttributes_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\GetNamedTypeAttributes_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\GetNamedVariableListAttributes_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\GetNamedVariableListAttributes_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\GetNameList_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\GetNameList_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\GetProgramInvocationAttributes_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\GetProgramInvocationAttributes_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\GetScatteredAccessAttributes_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\GetScatteredAccessAttributes_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\GetUnitControlAttributes_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\GetUnitControlAttributes_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\GetVariableAccessAttributes_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\GetVariableAccessAttributes_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\Identifier.cs" />
+    <Compile Include="MMS_ASN1_Model\Identify_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\Identify_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\InformationReport.cs" />
+    <Compile Include="MMS_ASN1_Model\InitializeJournal_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\InitializeJournal_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\InitiateDownloadSequence_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\InitiateDownloadSequence_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\InitiateUnitControlLoad_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\InitiateUnitControlLoad_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\InitiateUnitControl_Error.cs" />
+    <Compile Include="MMS_ASN1_Model\InitiateUploadSequence_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\InitiateUploadSequence_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\Initiate_ErrorPDU.cs" />
+    <Compile Include="MMS_ASN1_Model\Initiate_RequestPDU.cs" />
+    <Compile Include="MMS_ASN1_Model\Initiate_ResponsePDU.cs" />
+    <Compile Include="MMS_ASN1_Model\Input_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\Input_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\Integer16.cs" />
+    <Compile Include="MMS_ASN1_Model\Integer32.cs" />
+    <Compile Include="MMS_ASN1_Model\Integer8.cs" />
+    <Compile Include="MMS_ASN1_Model\ISO_9506_MMS_1.cs" />
+    <Compile Include="MMS_ASN1_Model\JournalEntry.cs" />
+    <Compile Include="MMS_ASN1_Model\Journal_Entry_instance.cs" />
+    <Compile Include="MMS_ASN1_Model\Journal_instance.cs" />
+    <Compile Include="MMS_ASN1_Model\Journal_Variable.cs" />
+    <Compile Include="MMS_ASN1_Model\Kill_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\Kill_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\LoadData.cs" />
+    <Compile Include="MMS_ASN1_Model\LoadDomainContent_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\LoadDomainContent_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\LoadUnitControlFromFile_Error.cs" />
+    <Compile Include="MMS_ASN1_Model\LoadUnitControlFromFile_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\LoadUnitControlFromFile_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\LogicalStatus.cs" />
+    <Compile Include="MMS_ASN1_Model\MMS255String.cs" />
+    <Compile Include="MMS_ASN1_Model\MMSpdu.cs" />
+    <Compile Include="MMS_ASN1_Model\MMSString.cs" />
+    <Compile Include="MMS_ASN1_Model\Modifier.cs" />
+    <Compile Include="MMS_ASN1_Model\ModifierStep.cs" />
+    <Compile Include="MMS_ASN1_Model\Named_Type_instance.cs" />
+    <Compile Include="MMS_ASN1_Model\Named_Variable_instance.cs" />
+    <Compile Include="MMS_ASN1_Model\Named_Variable_List_instance.cs" />
+    <Compile Include="MMS_ASN1_Model\ObjectClass.cs" />
+    <Compile Include="MMS_ASN1_Model\ObjectName.cs" />
+    <Compile Include="MMS_ASN1_Model\ObtainFile_Error.cs" />
+    <Compile Include="MMS_ASN1_Model\ObtainFile_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\ObtainFile_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\OperationState.cs" />
+    <Compile Include="MMS_ASN1_Model\OperatorCommunicationParameters.cs" />
+    <Compile Include="MMS_ASN1_Model\Operator_Station_instance.cs" />
+    <Compile Include="MMS_ASN1_Model\Output_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\Output_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\ParameterSupportOptions.cs" />
+    <Compile Include="MMS_ASN1_Model\PhysicalStatus.cs" />
+    <Compile Include="MMS_ASN1_Model\Priority.cs" />
+    <Compile Include="MMS_ASN1_Model\ProgramInvocationManagementParameters.cs" />
+    <Compile Include="MMS_ASN1_Model\ProgramInvocationState.cs" />
+    <Compile Include="MMS_ASN1_Model\Program_Invocation_instance.cs" />
+    <Compile Include="MMS_ASN1_Model\ReadJournal_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\ReadJournal_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\Read_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\Read_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\ReconfigureProgramInvocation_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\ReconfigureProgramInvocation_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\RejectPDU.cs" />
+    <Compile Include="MMS_ASN1_Model\RelinquishControl_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\RelinquishControl_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\RemoveEventConditionListReference_Error.cs" />
+    <Compile Include="MMS_ASN1_Model\RemoveEventConditionListReference_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\RemoveEventConditionListReference_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\RemoveFromUnitControl_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\RemoveFromUnitControl_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\Rename_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\Rename_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\ReportAccessControlledObjects_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\ReportAccessControlledObjects_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\ReportEventActionStatus_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\ReportEventActionStatus_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\ReportEventConditionListStatus_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\ReportEventConditionListStatus_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\ReportEventConditionStatus_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\ReportEventConditionStatus_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\ReportEventEnrollmentStatus_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\ReportEventEnrollmentStatus_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\ReportJournalStatus_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\ReportJournalStatus_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\ReportPoolSemaphoreStatus_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\ReportPoolSemaphoreStatus_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\ReportSemaphoreEntryStatus_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\ReportSemaphoreEntryStatus_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\ReportSemaphoreStatus_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\ReportSemaphoreStatus_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\RequestDomainDownload_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\RequestDomainDownload_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\RequestDomainUpload_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\RequestDomainUpload_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\Request_Detail.cs" />
+    <Compile Include="MMS_ASN1_Model\Reset_Error.cs" />
+    <Compile Include="MMS_ASN1_Model\Reset_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\Reset_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\Response_Detail.cs" />
+    <Compile Include="MMS_ASN1_Model\Resume_Error.cs" />
+    <Compile Include="MMS_ASN1_Model\Resume_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\Resume_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\Running_Mode.cs" />
+    <Compile Include="MMS_ASN1_Model\ScatteredAccessDescription.cs" />
+    <Compile Include="MMS_ASN1_Model\SCI_Information.cs" />
+    <Compile Include="MMS_ASN1_Model\Select_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\Select_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\SemaphoreEntry.cs" />
+    <Compile Include="MMS_ASN1_Model\SemaphoreManagementParameters.cs" />
+    <Compile Include="MMS_ASN1_Model\Semaphore_instance.cs" />
+    <Compile Include="MMS_ASN1_Model\ServiceError.cs" />
+    <Compile Include="MMS_ASN1_Model\ServiceSupportOptions.cs" />
+    <Compile Include="MMS_ASN1_Model\Service_and_Parameter_CBBs.cs" />
+    <Compile Include="MMS_ASN1_Model\Severity.cs" />
+    <Compile Include="MMS_ASN1_Model\StartCount.cs" />
+    <Compile Include="MMS_ASN1_Model\StartUnitControl_Error.cs" />
+    <Compile Include="MMS_ASN1_Model\StartUnitControl_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\StartUnitControl_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\Start_Error.cs" />
+    <Compile Include="MMS_ASN1_Model\Start_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\Start_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\StatusResponse.cs" />
+    <Compile Include="MMS_ASN1_Model\Status_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\Status_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\StopUnitControl_Error.cs" />
+    <Compile Include="MMS_ASN1_Model\StopUnitControl_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\StopUnitControl_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\Stop_Error.cs" />
+    <Compile Include="MMS_ASN1_Model\Stop_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\Stop_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\StoreDomainContent_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\StoreDomainContent_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\StoreUnitControlToFile_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\StoreUnitControlToFile_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\TakeControl_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\TakeControl_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\TerminateDownloadSequence_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\TerminateDownloadSequence_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\TerminateUploadSequence_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\TerminateUploadSequence_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\TimeOfDay.cs" />
+    <Compile Include="MMS_ASN1_Model\Transitions.cs" />
+    <Compile Include="MMS_ASN1_Model\TriggerEvent_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\TriggerEvent_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\TypeDescription.cs" />
+    <Compile Include="MMS_ASN1_Model\TypeSpecification.cs" />
+    <Compile Include="MMS_ASN1_Model\ULState.cs" />
+    <Compile Include="MMS_ASN1_Model\UnconfirmedService.cs" />
+    <Compile Include="MMS_ASN1_Model\Unconfirmed_Detail.cs" />
+    <Compile Include="MMS_ASN1_Model\Unconfirmed_PDU.cs" />
+    <Compile Include="MMS_ASN1_Model\UnitControlLoadSegment_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\UnitControlLoadSegment_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\UnitControlUpload_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\UnitControlUpload_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\Unit_Control_instance.cs" />
+    <Compile Include="MMS_ASN1_Model\Unnamed_Variable_instance.cs" />
+    <Compile Include="MMS_ASN1_Model\Unsigned16.cs" />
+    <Compile Include="MMS_ASN1_Model\Unsigned32.cs" />
+    <Compile Include="MMS_ASN1_Model\Unsigned8.cs" />
+    <Compile Include="MMS_ASN1_Model\UnsolicitedStatus.cs" />
+    <Compile Include="MMS_ASN1_Model\UploadSegment_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\UploadSegment_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\UtcTime.cs" />
+    <Compile Include="MMS_ASN1_Model\VariableAccessParameters.cs" />
+    <Compile Include="MMS_ASN1_Model\VariableAccessSpecification.cs" />
+    <Compile Include="MMS_ASN1_Model\VariableSpecification.cs" />
+    <Compile Include="MMS_ASN1_Model\Variable_List_Item_instance.cs" />
+    <Compile Include="MMS_ASN1_Model\VMDReset_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\VMDReset_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\VMDState.cs" />
+    <Compile Include="MMS_ASN1_Model\VMDStop_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\VMDStop_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\VMDSupportParameters.cs" />
+    <Compile Include="MMS_ASN1_Model\VMD_File.cs" />
+    <Compile Include="MMS_ASN1_Model\WriteJournal_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\WriteJournal_Response.cs" />
+    <Compile Include="MMS_ASN1_Model\Write_Request.cs" />
+    <Compile Include="MMS_ASN1_Model\Write_Response.cs" />
+    <Compile Include="Scsm_MMS_Worker.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IsoTpkt.cs" />
+    <Compile Include="Views\MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MyDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\SCLView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SCLView.Designer.cs">
+      <DependentUpon>SCLView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WindowManager.cs" />
+    <Compile Include="WriteQueueElement.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dialogs\AboutDialog.resx">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AutoUpdateStoppedDialog.resx">
+      <DependentUpon>AutoUpdateStoppedDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ControllableSignalsDialog.resx">
+      <DependentUpon>ControllableSignalsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FindForm.resx">
+      <DependentUpon>FindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goose\GooseControl.resx">
+      <DependentUpon>GooseControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goose\GooseDataeEdit.resx">
+      <DependentUpon>GooseDataeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goose\GooseExplorer.resx">
+      <DependentUpon>GooseExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goose\GooseSender.resx">
+      <DependentUpon>GooseSender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AddNVLView.resx">
+      <DependentUpon>AddNVLView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CommandDialog.resx">
+      <DependentUpon>CommandDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ConnParamDialog.resx">
+      <DependentUpon>ConnParamDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RcbActivateDialog.resx">
+      <DependentUpon>RcbActivateDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SplitStringDialog.resx">
+      <DependentUpon>SplitStringDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>WeifenLuo.WinFormsUI.Docking</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\ResourcesVS2003.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourcesVS2003.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>WeifenLuo.WinFormsUI.Docking</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Strings.resx">
+      <SubType>Designer</SubType>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>WeifenLuo.WinFormsUI.Docking</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\StringsVS2003.resx">
+      <CustomToolNamespace>WeifenLuo.WinFormsUI.Docking</CustomToolNamespace>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringsVS2003.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\EditValue.resx">
+      <DependentUpon>EditValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HexBox\HexBox.resx">
+      <DependentUpon>HexBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeViewAdv\Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeViewAdv\Tree\TreeViewAdv.resx">
+      <DependentUpon>TreeViewAdv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CaptureView.resx">
+      <DependentUpon>CaptureView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PollView.resx">
+      <DependentUpon>PollView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ReportsView.resx">
+      <DependentUpon>ReportsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\WatchDataView.resx">
+      <DependentUpon>WatchDataView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\IedDataView.resx">
+      <DependentUpon>IedDataView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\IedTreeView.resx">
+      <DependentUpon>IedTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LogView.resx">
+      <DependentUpon>LogView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SCLView.resx">
+      <DependentUpon>SCLView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Docking\DockPanel.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockIndicator_PaneDiamond.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockIndicator_PaneDiamond_Bottom.bmp" />
+    <Content Include="Docking\ResourcesVS2003\Dockindicator_PaneDiamond_Fill.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockIndicator_PaneDiamond_Hotspot.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockIndicator_PaneDiamond_HotspotIndex.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockIndicator_PaneDiamond_Left.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockIndicator_PaneDiamond_Right.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockIndicator_PaneDiamond_Top.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockIndicator_PanelBottom.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockIndicator_PanelBottom_Active.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockIndicator_PanelFill.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockIndicator_PanelFill_Active.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockIndicator_PanelLeft.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockIndicator_PanelLeft_Active.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockIndicator_PanelRight.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockIndicator_PanelRight_Active.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockIndicator_PanelTop.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockIndicator_PanelTop_Active.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockPaneCaption_AutoHideNo.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockPaneCaption_AutoHideYes.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockPaneCaption_CloseDisabled.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockPaneCaption_CloseEnabled.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockPaneStrip_CloseDisabled.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockPaneStrip_CloseEnabled.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockPaneStrip_ScrollLeftDisabled.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockPaneStrip_ScrollLeftEnabled.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockPaneStrip_ScrollRightDisabled.bmp" />
+    <Content Include="Docking\ResourcesVS2003\DockPaneStrip_ScrollRightEnabled.bmp" />
+    <Content Include="Docking\Resources\ActiveTabHover_Close.bmp" />
+    <Content Include="Docking\Resources\ActiveTab_Close.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PaneDiamond.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PaneDiamond_Bottom.bmp" />
+    <Content Include="Docking\Resources\Dockindicator_PaneDiamond_Fill.bmp" />
+    <Content Include="Docking\Resources\Dockindicator_PaneDiamond_Fill_VS2012.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PaneDiamond_Hotspot.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PaneDiamond_HotspotIndex.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PaneDiamond_HotspotIndex_VS2012.bmp" />
+    <Content Include="Docking\Resources\Dockindicator_PaneDiamond_Hotspot_VS2012.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PaneDiamond_Left.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PaneDiamond_Right.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PaneDiamond_Top.bmp" />
+    <Content Include="Docking\Resources\Dockindicator_PaneDiamond_VS2012.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelBottom.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelBottom_Active.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelBottom_VS2012.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelFill.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelFill_Active.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelFill_VS2012.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelLeft.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelLeft_Active.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelLeft_VS2012.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelRight.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelRight_Active.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelRight_VS2012.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelTop.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelTop_Active.bmp" />
+    <Content Include="Docking\Resources\DockIndicator_PanelTop_VS2012.bmp" />
+    <Content Include="Docking\Resources\DockPane_AutoHide.bmp" />
+    <Content Include="Docking\Resources\DockPane_Close.bmp" />
+    <Content Include="Docking\Resources\DockPane_Dock.bmp" />
+    <Content Include="Docking\Resources\DockPane_Option.bmp" />
+    <Content Include="Docking\Resources\DockPane_OptionOverflow.bmp" />
+    <Content Include="Docking\Resources\InactiveTabHover_Close.bmp" />
+    <Content Include="Docking\Resources\LostFocusTabHover_Close.bmp" />
+    <Content Include="Docking\Resources\LostFocusTab_Close.bmp" />
+    <EmbeddedResource Include="Embed\iec61850.dll" />
+    <EmbeddedResource Include="Embed\iec61850dotnet.dll" />
+    <EmbeddedResource Include="Embed\PcapDotNet.Base.dll" />
+    <EmbeddedResource Include="Embed\PcapDotNet.Core.dll" />
+    <EmbeddedResource Include="Embed\PcapDotNet.Core.Extensions.dll" />
+    <EmbeddedResource Include="Embed\PcapDotNet.Packets.dll" />
+    <Content Include="Iedexplorer.ico" />
+    <Content Include="README.txt" />
+    <Content Include="Resources\calculator.png" />
+    <Content Include="Resources\computer.png" />
+    <None Include="app.config" />
+    <None Include="Resources\page_white_database.png" />
+    <None Include="Resources\page_white_put.png" />
+    <None Include="Resources\RP1.ico" />
+    <None Include="Resources\RP2.ico" />
+    <None Include="Resources\DS1.ico" />
+    <None Include="Resources\VLM.ico" />
+    <Content Include="Resources\find.png" />
+    <Content Include="Resources\page_copy.png" />
+    <Content Include="Resources\toolStripButton_Clear.Image.png" />
+    <Content Include="Resources\toolStripButton_Export.Image.png" />
+    <Content Include="Resources\toolStripButton_ExportCSV.Image.png" />
+    <Content Include="Resources\toolStripButton_GooseExplorer.Image.png" />
+    <Content Include="Resources\toolStripButton_GooseSender.Image.png" />
+    <Content Include="Resources\toolStripButton_OpenScl.Image.png" />
+    <Content Include="Resources\toolStripButton_Pooling.Image.png" />
+    <Content Include="Resources\toolStripButton_Run.Image.png" />
+    <Content Include="Resources\toolStripButton_Stop.Image.png" />
+    <Content Include="TreeViewAdv\Resources\check.bmp" />
+    <Content Include="TreeViewAdv\Resources\DVSplit.cur" />
+    <Content Include="TreeViewAdv\Resources\Folder.bmp" />
+    <Content Include="TreeViewAdv\Resources\FolderClosed.bmp" />
+    <Content Include="TreeViewAdv\Resources\Leaf.bmp" />
+    <Content Include="TreeViewAdv\Resources\minus.bmp" />
+    <Content Include="TreeViewAdv\Resources\plus.bmp" />
+    <Content Include="TreeViewAdv\Resources\uncheck.bmp" />
+    <Content Include="TreeViewAdv\Resources\unknown.bmp" />
+    <None Include="Docking\Resources\Thumbs.db" />
+    <None Include="Resources\DA1.ico" />
+    <None Include="Resources\DA2.ico" />
+    <None Include="Resources\DA3.ico" />
+    <None Include="Resources\DA4.ico" />
+    <None Include="Resources\DA5.ico" />
+    <None Include="Resources\DA6.ico" />
+    <Content Include="Resources\database.png" />
+    <None Include="Resources\DO1.ico" />
+    <None Include="Resources\DO2.ico" />
+    <None Include="Resources\DO3.ico" />
+    <None Include="Resources\DO4.ico" />
+    <None Include="Resources\DO5.ico" />
+    <None Include="Resources\DO6.ico" />
+    <None Include="Resources\FC1.ico" />
+    <None Include="Resources\FC2.ico" />
+    <None Include="Resources\FC3.ico" />
+    <None Include="Resources\FC4.ico" />
+    <None Include="Resources\FC5.ico" />
+    <None Include="Resources\FC6.ico" />
+    <None Include="Resources\LN1.ico" />
+    <None Include="Resources\LN2.ico" />
+    <None Include="Resources\LN3.ico" />
+    <None Include="Resources\LN4.ico" />
+    <None Include="Resources\LN5.ico" />
+    <None Include="Resources\LN6.ico" />
+    <Content Include="Resources\folder.png" />
+    <Content Include="Resources\page_white_text.png" />
+    <Content Include="Resources\page_white_text_width.png" />
+    <Content Include="Resources\run.png" />
+    <Content Include="Resources\sitemap_color.png" />
+    <Content Include="Resources\stop.png" />
+    <None Include="TreeViewAdv\Resources\loading_icon" />
+    <None Include="TreeViewAdv\Tree\ClassDiagram.cd" />
+    <None Include="TreeViewAdv\Tree\NodeControls\ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

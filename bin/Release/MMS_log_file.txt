@@ -1,0 +1,181 @@
+[2025/9/15 16:24:26.196] Information: 开始主程序 ...
+[2025/9/15 16:24:26.214] Information: Verbosity selected: Information
+[2025/9/15 16:24:37.553] Information: Starting new communication, hostname = 192.168.75.137, port = 102.
+[2025/9/15 16:24:37.553] Information: [TCP_STATE_START]
+[2025/9/15 16:24:37.584] Information: ConnectCallback: Socket connected to 192.168.75.137:102
+[2025/9/15 16:24:37.584] Information: [OSI_CONNECT_COTP]
+[2025/9/15 16:24:37.600] Information: [OSI_CONNECT_PRES]
+[2025/9/15 16:24:37.663] Information: Services Supported: status,getNameList,identify,read,write,getVariableAccessAttributes,defineNamedVariableList,getNamedVariableListAttributes,deleteNamedVariableList,obtainFile,fileOpen,fileRead,fileClose,fileDelete,fileDirectory,informationReport,conclude,cancel,
+[2025/9/15 16:24:37.663] Information: [IEC61850_STATE_START] (Send IdentifyRequest)
+[2025/9/15 16:24:37.689] Information: Received Identify: HY, iron core, 1.6.0
+[2025/9/15 16:24:37.705] Information: Reading domain (LD) names: [IEC61850_READ_NAMELIST_DOMAIN]
+[2025/9/15 16:24:37.720] Information: Reading variable names: [IEC61850_READ_NAMELIST_VAR]
+[2025/9/15 16:24:37.756] Information: Reading variable specifications: [IEC61850_READ_ACCESSAT_VAR]
+[2025/9/15 16:24:37.878] Information: Reading variable values: [IEC61850_READ_MODEL_DATA]
+[2025/9/15 16:24:38.287] Information: Reading named variable lists: [IEC61850_READ_NAMELIST_NAMED_VARIABLE_LIST]
+[2025/9/15 16:24:38.303] Information: Reading variable lists attributes: [IEC61850_READ_ACCESSAT_NAMED_VARIABLE_LIST]
+[2025/9/15 16:24:38.335] Information: Init end: [IEC61850_FREILAUF]
+[2025/9/15 17:43:35.856] Error: Socket disconnected (detected in ReceiveCallback)
+[2025/9/15 17:43:36.225] Information: [TCP_STATE_SHUTDOWN]
+[2025/9/15 17:43:36.225] Information: Communication to hostname = 192.168.75.137, port = 102 stopped.
+[2025/9/15 17:43:46.262] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:43:46.293] Information: Starting new communication, hostname = 192.168.75.137, port = 102.
+[2025/9/15 17:43:46.293] Information: [TCP_STATE_START]
+[2025/9/15 17:43:48.331] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:43:48.416] Error: System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 192.168.75.137:102
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IEDExplorer.TcpRw.ConnectCallback(IAsyncResult ar) 位置 D:\prj\61850client\iedexplorer-master\TcpRw.cs:行号 119
+[2025/9/15 17:43:48.825] Information: [TCP_STATE_SHUTDOWN]
+[2025/9/15 17:43:48.826] Information: Communication to hostname = 192.168.75.137, port = 102 stopped.
+[2025/9/15 17:43:58.842] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:43:58.849] Information: Starting new communication, hostname = 192.168.75.137, port = 102.
+[2025/9/15 17:43:58.850] Information: [TCP_STATE_START]
+[2025/9/15 17:44:00.891] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:44:00.892] Error: System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 192.168.75.137:102
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IEDExplorer.TcpRw.ConnectCallback(IAsyncResult ar) 位置 D:\prj\61850client\iedexplorer-master\TcpRw.cs:行号 119
+[2025/9/15 17:44:01.393] Information: [TCP_STATE_SHUTDOWN]
+[2025/9/15 17:44:01.394] Information: Communication to hostname = 192.168.75.137, port = 102 stopped.
+[2025/9/15 17:44:11.406] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:44:11.422] Information: Starting new communication, hostname = 192.168.75.137, port = 102.
+[2025/9/15 17:44:11.426] Information: [TCP_STATE_START]
+[2025/9/15 17:44:13.475] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:44:13.481] Error: System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 192.168.75.137:102
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IEDExplorer.TcpRw.ConnectCallback(IAsyncResult ar) 位置 D:\prj\61850client\iedexplorer-master\TcpRw.cs:行号 119
+[2025/9/15 17:44:13.956] Information: [TCP_STATE_SHUTDOWN]
+[2025/9/15 17:44:13.958] Information: Communication to hostname = 192.168.75.137, port = 102 stopped.
+[2025/9/15 17:44:23.989] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:44:24.017] Information: Starting new communication, hostname = 192.168.75.137, port = 102.
+[2025/9/15 17:44:24.017] Information: [TCP_STATE_START]
+[2025/9/15 17:44:26.058] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:44:26.058] Error: System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 192.168.75.137:102
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IEDExplorer.TcpRw.ConnectCallback(IAsyncResult ar) 位置 D:\prj\61850client\iedexplorer-master\TcpRw.cs:行号 119
+[2025/9/15 17:44:26.553] Information: [TCP_STATE_SHUTDOWN]
+[2025/9/15 17:44:26.553] Information: Communication to hostname = 192.168.75.137, port = 102 stopped.
+[2025/9/15 17:44:36.589] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:44:36.603] Information: Starting new communication, hostname = 192.168.75.137, port = 102.
+[2025/9/15 17:44:36.605] Information: [TCP_STATE_START]
+[2025/9/15 17:44:38.662] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:44:38.662] Error: System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 192.168.75.137:102
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IEDExplorer.TcpRw.ConnectCallback(IAsyncResult ar) 位置 D:\prj\61850client\iedexplorer-master\TcpRw.cs:行号 119
+[2025/9/15 17:44:39.168] Information: [TCP_STATE_SHUTDOWN]
+[2025/9/15 17:44:39.169] Information: Communication to hostname = 192.168.75.137, port = 102 stopped.
+[2025/9/15 17:44:49.183] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:44:49.199] Information: Starting new communication, hostname = 192.168.75.137, port = 102.
+[2025/9/15 17:44:49.199] Information: [TCP_STATE_START]
+[2025/9/15 17:44:51.240] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:44:51.240] Error: System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 192.168.75.137:102
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IEDExplorer.TcpRw.ConnectCallback(IAsyncResult ar) 位置 D:\prj\61850client\iedexplorer-master\TcpRw.cs:行号 119
+[2025/9/15 17:44:51.739] Information: [TCP_STATE_SHUTDOWN]
+[2025/9/15 17:44:51.741] Information: Communication to hostname = 192.168.75.137, port = 102 stopped.
+[2025/9/15 17:45:01.774] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:45:01.786] Information: Starting new communication, hostname = 192.168.75.137, port = 102.
+[2025/9/15 17:45:01.790] Information: [TCP_STATE_START]
+[2025/9/15 17:45:03.859] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:45:03.859] Error: System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 192.168.75.137:102
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IEDExplorer.TcpRw.ConnectCallback(IAsyncResult ar) 位置 D:\prj\61850client\iedexplorer-master\TcpRw.cs:行号 119
+[2025/9/15 17:45:04.340] Information: [TCP_STATE_SHUTDOWN]
+[2025/9/15 17:45:04.345] Information: Communication to hostname = 192.168.75.137, port = 102 stopped.
+[2025/9/15 17:45:14.368] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:45:14.395] Information: Starting new communication, hostname = 192.168.75.137, port = 102.
+[2025/9/15 17:45:14.399] Information: [TCP_STATE_START]
+[2025/9/15 17:45:16.445] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:45:16.450] Error: System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 192.168.75.137:102
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IEDExplorer.TcpRw.ConnectCallback(IAsyncResult ar) 位置 D:\prj\61850client\iedexplorer-master\TcpRw.cs:行号 119
+[2025/9/15 17:45:16.943] Information: [TCP_STATE_SHUTDOWN]
+[2025/9/15 17:45:16.943] Information: Communication to hostname = 192.168.75.137, port = 102 stopped.
+[2025/9/15 17:45:26.963] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:45:26.979] Information: Starting new communication, hostname = 192.168.75.137, port = 102.
+[2025/9/15 17:45:26.979] Information: [TCP_STATE_START]
+[2025/9/15 17:45:29.032] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:45:29.032] Error: System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 192.168.75.137:102
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IEDExplorer.TcpRw.ConnectCallback(IAsyncResult ar) 位置 D:\prj\61850client\iedexplorer-master\TcpRw.cs:行号 119
+[2025/9/15 17:45:29.531] Information: [TCP_STATE_SHUTDOWN]
+[2025/9/15 17:45:29.531] Information: Communication to hostname = 192.168.75.137, port = 102 stopped.
+[2025/9/15 17:45:39.558] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:45:39.574] Information: Starting new communication, hostname = 192.168.75.137, port = 102.
+[2025/9/15 17:45:39.574] Information: [TCP_STATE_START]
+[2025/9/15 17:45:41.604] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:45:41.604] Error: System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 192.168.75.137:102
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IEDExplorer.TcpRw.ConnectCallback(IAsyncResult ar) 位置 D:\prj\61850client\iedexplorer-master\TcpRw.cs:行号 119
+[2025/9/15 17:45:42.104] Information: [TCP_STATE_SHUTDOWN]
+[2025/9/15 17:45:42.104] Information: Communication to hostname = 192.168.75.137, port = 102 stopped.
+[2025/9/15 17:45:52.140] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:45:52.164] Information: Starting new communication, hostname = 192.168.75.137, port = 102.
+[2025/9/15 17:45:52.166] Information: [TCP_STATE_START]
+[2025/9/15 17:45:54.209] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:45:54.209] Error: System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 192.168.75.137:102
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IEDExplorer.TcpRw.ConnectCallback(IAsyncResult ar) 位置 D:\prj\61850client\iedexplorer-master\TcpRw.cs:行号 119
+[2025/9/15 17:45:54.686] Information: [TCP_STATE_SHUTDOWN]
+[2025/9/15 17:45:54.691] Information: Communication to hostname = 192.168.75.137, port = 102 stopped.
+[2025/9/15 17:46:04.704] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:46:04.704] Information: Starting new communication, hostname = 192.168.75.137, port = 102.
+[2025/9/15 17:46:04.704] Information: [TCP_STATE_START]
+[2025/9/15 17:46:06.743] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:46:06.747] Error: System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 192.168.75.137:102
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IEDExplorer.TcpRw.ConnectCallback(IAsyncResult ar) 位置 D:\prj\61850client\iedexplorer-master\TcpRw.cs:行号 119
+[2025/9/15 17:46:07.226] Information: [TCP_STATE_SHUTDOWN]
+[2025/9/15 17:46:07.231] Information: Communication to hostname = 192.168.75.137, port = 102 stopped.
+[2025/9/15 17:46:17.249] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:46:17.276] Information: Starting new communication, hostname = 192.168.75.137, port = 102.
+[2025/9/15 17:46:17.276] Information: [TCP_STATE_START]
+[2025/9/15 17:46:19.316] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:46:19.321] Error: System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 192.168.75.137:102
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IEDExplorer.TcpRw.ConnectCallback(IAsyncResult ar) 位置 D:\prj\61850client\iedexplorer-master\TcpRw.cs:行号 119
+[2025/9/15 17:46:19.803] Information: [TCP_STATE_SHUTDOWN]
+[2025/9/15 17:46:19.803] Information: Communication to hostname = 192.168.75.137, port = 102 stopped.
+[2025/9/15 17:46:29.822] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:46:29.851] Information: Starting new communication, hostname = 192.168.75.137, port = 102.
+[2025/9/15 17:46:29.854] Information: [TCP_STATE_START]
+[2025/9/15 17:46:31.907] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:46:31.907] Error: System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 192.168.75.137:102
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IEDExplorer.TcpRw.ConnectCallback(IAsyncResult ar) 位置 D:\prj\61850client\iedexplorer-master\TcpRw.cs:行号 119
+[2025/9/15 17:46:32.422] Information: [TCP_STATE_SHUTDOWN]
+[2025/9/15 17:46:32.422] Information: Communication to hostname = 192.168.75.137, port = 102 stopped.
+[2025/9/15 17:46:42.443] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:46:42.443] Information: Starting new communication, hostname = 192.168.75.137, port = 102.
+[2025/9/15 17:46:42.443] Information: [TCP_STATE_START]
+[2025/9/15 17:46:44.510] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:46:44.512] Error: System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 192.168.75.137:102
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IEDExplorer.TcpRw.ConnectCallback(IAsyncResult ar) 位置 D:\prj\61850client\iedexplorer-master\TcpRw.cs:行号 119
+[2025/9/15 17:46:45.020] Information: [TCP_STATE_SHUTDOWN]
+[2025/9/15 17:46:45.024] Information: Communication to hostname = 192.168.75.137, port = 102 stopped.
+[2025/9/15 17:46:55.055] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:46:55.069] Information: Starting new communication, hostname = 192.168.75.137, port = 102.
+[2025/9/15 17:46:55.071] Information: [TCP_STATE_START]
+[2025/9/15 17:46:57.111] Information: StopClient: Socket shutdowned.
+[2025/9/15 17:46:57.111] Error: System.Net.Sockets.SocketException (0x80004005): 由于目标计算机积极拒绝，无法连接。 192.168.75.137:102
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 IEDExplorer.TcpRw.ConnectCallback(IAsyncResult ar) 位置 D:\prj\61850client\iedexplorer-master\TcpRw.cs:行号 119
+[2025/9/15 17:46:57.627] Information: [TCP_STATE_SHUTDOWN]
+[2025/9/15 17:46:57.627] Information: Communication to hostname = 192.168.75.137, port = 102 stopped.
+[2025/9/15 17:47:07.658] Information: StopClient: Socket shutdowned.
